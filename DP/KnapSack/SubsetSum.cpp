@@ -3,8 +3,6 @@ using namespace std;
 
 
 int SubsetSum(vector<int>&arr, int sum ,int n, vector<vector<int>>&dp){
-
-
    for (int i = 0; i <= n; i++) {
       dp[i][0] = 1; 
    }
@@ -25,8 +23,8 @@ int SubsetSum(vector<int>&arr, int sum ,int n, vector<vector<int>>&dp){
 }
 
 int main(){
-   vector<int> arr = {2, 3, 7, 8, 10};
-   int sum = 10;
+   vector<int> arr = {12, 13, 7, 8, 10};
+   int sum = 11;
    int n = 5;
 
    vector<vector<int>> dp(n + 1, (vector<int>(sum + 1, 0)));
